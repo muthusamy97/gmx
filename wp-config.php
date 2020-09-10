@@ -1,16 +1,4 @@
-
 <?php
-if(isset($_ENV[`CLEARDB_DATABASE_URL`])) {
-    $db = parse_url($_ENV[`CLEARDB_DATABASE_URL`]);
-    define(‘DB_NAME’, trim($db[`path`],`/`));
-    define(‘DB_USER’, $db[`user`]);
-    define(‘DB_PASSWORD’, $db[`pass`]);
-    define(‘DB_HOST’, $db[`host`]);
-    define(‘DB_CHARSET’, ‘utf8’);
-    define(‘DB_COLLATE’, ‘’);
-} else {
-    die(‘No Database credentials!’);
-}
 /**
  * The base configuration for WordPress
  *
@@ -32,19 +20,19 @@ if(isset($_ENV[`CLEARDB_DATABASE_URL`])) {
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'database_name_here' );
+define( 'DB_NAME', 'gyan_site_test' );
 
 /** MySQL database username */
-define( 'DB_USER', 'username_here' );
+define( 'DB_USER', 'root' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'password_here' );
+define( 'DB_PASSWORD', '' );
 
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost' );
 
 /** Database Charset to use in creating database tables. */
-define( 'DB_CHARSET', 'utf8' );
+define( 'DB_CHARSET', 'utf8mb4' );
 
 /** The Database Collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
@@ -58,14 +46,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'put your unique phrase here' );
-define( 'SECURE_AUTH_KEY',  'put your unique phrase here' );
-define( 'LOGGED_IN_KEY',    'put your unique phrase here' );
-define( 'NONCE_KEY',        'put your unique phrase here' );
-define( 'AUTH_SALT',        'put your unique phrase here' );
-define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
-define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
-define( 'NONCE_SALT',       'put your unique phrase here' );
+define( 'AUTH_KEY',         '3Q8uxmomq5:9sa|2hZ*#1:kN8CFR;W1DMYtX5WV{2oSTdu7rGB1PF%e.sCrBV,d!' );
+define( 'SECURE_AUTH_KEY',  '[)H)p%lai]{#()Q9,{6waP-?AO1m;W5KwRUgH6PCA:;hMK=UGl0]UeMBPvYH//(^' );
+define( 'LOGGED_IN_KEY',    't%1< aM`v&)Juz0#;M|?y-=xsyBAF5/wg;5o!(kJf^^ !LXDk66d(8F$0oq,0Cct' );
+define( 'NONCE_KEY',        'e;WQ=xXNB,S];QR3VTZm[ie{qPy8+(R.$(1n>1!$c%)B|+ge/h#}Q.#B{C HR673' );
+define( 'AUTH_SALT',        ':S$hv7`t7BGMS6`]ZJ_,fn<}s~QC8_?zU?w(U@SoS_T4$|Vg1JV/hyk6K~&Mj0%H' );
+define( 'SECURE_AUTH_SALT', 'EBn+K!&1Ec?019$_b~Z2r&5cU1>G+|R#n]]yY]y!W%6uTLcNWz,Dnn7~1OhF6YKx' );
+define( 'LOGGED_IN_SALT',   '0IsNo9wYbyzIjx_wv5A72PcFl/)WzUF>B;`B_0:7Mb/#VKcUspv>U_=Hyicrqx+d' );
+define( 'NONCE_SALT',       '/N1Od8O,8=+xRnw$M +Yw3nP cwtbnNQwFrwjsRb8jwwjVv{oe6*-pmMi9AMEh @' );
 
 /**#@-*/
 
